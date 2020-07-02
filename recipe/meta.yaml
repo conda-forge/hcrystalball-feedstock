@@ -10,7 +10,7 @@ source:
   sha256: dab4527bba16529c5b0d2ac6128b8ef26324be6d124d4f2746922ac5c0a2db36
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,6 +26,7 @@ requirements:
     - scipy >=1.4
     - scikit-learn >=0.23
     - workalendar >=10.1
+    - matplotlib
 
 test:
   imports:
