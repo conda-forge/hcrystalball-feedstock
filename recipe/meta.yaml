@@ -1,5 +1,5 @@
 {% set name = "hcrystalball" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f59e4fa2775a6aaf9f9f4f38bd76391929cffa0500c97f6d78437f3bf6d26892
+  sha256: 53b93a42f8eac480d0646d387322aaf95b5b478c1705ac98c435f205d605dc3c
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
