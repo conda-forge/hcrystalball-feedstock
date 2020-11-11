@@ -5,11 +5,9 @@ Home: https://github.com/heidelbergcement/hcrystalball
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hcrystalball-feedstock/blob/master/LICENSE.txt)
 
 Summary: A time series library that unifies the API for most commonly used libraries and modelling techniques for time-series forecasting in the Python ecosystem.
-
-
 
 Current build status
 ====================
