@@ -10,17 +10,17 @@ source:
   sha256: 9c833a60f1a6def415e7fc1c380a25d1746fa335a609571b5356079eee3f990d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.6
     - pip
     - pyscaffold >=3.1a0,<3.2a0
   run:
-    - python >=3.7
+    - python >=3.6
     - numpy
     - pandas >=1.0
     - scipy >=1.4
