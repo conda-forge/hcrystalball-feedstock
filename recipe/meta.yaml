@@ -1,5 +1,5 @@
 {% set name = "hcrystalball" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a9691625552f0db39913bd3b0075f19f93fcd27736093779455882600bb577c9
+  sha256: 1b5a1fdbdc105cf0adc8fba9444ae768610ddee99c3b3bbf48f8f0bcaeabf41c
 
 build:
   number: 0
