@@ -10,17 +10,17 @@ source:
   sha256: 1b5a1fdbdc105cf0adc8fba9444ae768610ddee99c3b3bbf48f8f0bcaeabf41c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - pyscaffold >=3.1a0,<3.2a0
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - pandas >=1.0
     - scipy >=1.4
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/heidelbergcement/hcrystalball
